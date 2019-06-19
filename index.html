@@ -14,71 +14,78 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <style type="text/css">
-
 	#navigation-bar{
-		background-color: #800000 !important;
+		/*background-color: #800000 !important;*/
 	}
 	
 	#img-logo{
 		 width: 100px;
 		 height:100px;
 	}
-
 	#logo-name{
-		font-size: 2rem;
+		font-size: 3vw;
 		font-family: 'Acme', sans-serif;
 		
 		margin-left: 20px;
 		margin-top: 20px; 
 	}
-
 	#head-items{
 		justify-content: flex-end;
 		font-family: 'Gloria Hallelujah', cursive;
+		font-size: 1.5vw;
+		font-weight: 100;
+		margin-right: 100px;
 	}
 /*
 	#navbar-icon{
 		border: 1px solid #61122f;
 	}*/
-
 	.navbar button .navbar-toggler-icon{
 		border: 2px solid #61122f;
+
 	}
 
+
+
+@media (max-width: 768px) {
+	#logo-name{
+		font-size: 10vw;
+	}
+}
 </style>
 	</head>
 		
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigation-bar">
+			<nav class="navbar navbar-expand-md navbar-light bg-light navbar-light " id="navigation-bar">
 			<a  class="navbar-brand " href="index.html">
-   				<img id="img-logo" src="restaurant-logo_large.png"  class="d-inline-block" alt="">
-    			<div id="logo-name" class="float-right">welcome to india</div>
+   				<img id="img-logo" src="images/logo-image.png"  class="d-inline-block .d-lg-none " alt="">
+    			<div id="logo-name" class="float-right text-capitalize">tech world</div>
   		    </a>
   		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#head-items" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   		    	<span class="navbar-toggler-icon" id="navbar-icon"></span>	
 
   		    </button>
 
-  		    <div class="collapse navbar-collapse " id="head-items">
+  		    <div class="collapse navbar-collapse  font-weight-bold " id="head-items">
   		    	<ul class="navbar-nav">
-  		    		<li class="nav-item active">
+  		    		<li class="nav-item  mr-lg-2">
   		    			<a class="nav-link" href="#">my life<span class="sr-only">(life)</span></a>
   		    		</li>
 
-  		    		<li class="nav-item ">
+  		    		<li class="nav-item mr-lg-2">
   		    			<a class="nav-link" href="#">my courses</a>
   		    		</li>
 
-  		    		<li class="nav-item ">
+  		    		<li class="nav-item mr-lg-2">
   		    			<a class="nav-link" href="#">my experiences</a>
   		    		</li>
 
-  		    		<li class="nav-item ">
+  		    		<li class="nav-item mr-lg-2">
   		    			<a class="nav-link" href="#">my history</a>
   		    		</li>
 
-  		    		<li class="nav-item ">
+  		    		<li class="nav-item mr-lg-2 ">
   		    			<a class="nav-link" href="#">about me</a>
   		    		</li>
   		    	</ul>
@@ -88,6 +95,3 @@
 		</header>
 	</body>
 </html>
-
-
-
